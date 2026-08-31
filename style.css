@@ -6,6 +6,9 @@ body{
     margin: 0;
     padding: 0;
     background-color: #ecccb4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .barra-superior {
@@ -76,5 +79,34 @@ body{
 .cards h3 {
     padding: 0px;
     margin: 0px;
+}
 
+.cards h5 {
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    background-color: #a85d30;
+    color:#ecccb4;
+    margin-top: auto;
+    padding: 15px;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_sobre {
+    padding: 40px;
+    background-color: #ce8b5c;
+    color: #ecccb4;
+    margin: 20px;
+    border-radius: 9px;
+    font-weight: 700;
+    max-width: 700px;
 }
