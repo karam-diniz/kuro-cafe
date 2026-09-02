@@ -55,11 +55,18 @@ body{
     transition: 0.2s;
 }
 
-.container:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
+.container {
+
+    transition: 0.2s ease-in-out;
 }
 
+.container:hover {
+    transform: scale(1.1);
+}
+
+.container:hover img {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 .title_home {
     text-align: center;
     color: #a85d30;
