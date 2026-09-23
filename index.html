@@ -4,127 +4,341 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuro Coffee Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="barra-superior">
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-
-        <div class="logo">
-            <a href="#"><img src="logo.png" alt="kuro logo"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ce8b5c;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="kuro logo" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuKuro">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menuKuro">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold fs-5" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold fs-5" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold fs-5" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="experiencias">
-        <h1 class="title_home">Experiência Clássica</h1>
-        <h6 class="subtitle">É café, o que poderia dar errado?</h6>
+<div class="experiencias mt-4 px-4">
+    <h1 class="title_home text-center" style="color: #a85d30;">Experiência Clássica</h1>
+    <h6 class="subtitle text-center mb-4" style="color: #ce8b5c;">É café, o que poderia dar errado?</h6>
 
-        <div class="cards">
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
+    <div class="container">
+        
+        <div id="carrosselClassica" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner pb-4">
+                
+                <div class="carousel-item active">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 1</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 2</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 3</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 4</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 5</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 6</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselClassica" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselClassica" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 d-none d-md-flex">
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 1</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
+            
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 1</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 2</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 3</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 4</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 5</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="experiencias mt-4 px-4">
+    <h1 class="title_home text-center" style="color: #a85d30;">Experiência Clássica</h1>
+    <h6 class="subtitle text-center mb-4" style="color: #ce8b5c;">É café, o que poderia dar errado?</h6>
+
+    <div class="container">
+        
+        <div id="carrosselClassica" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner pb-4">
+                
+                <div class="carousel-item active">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 1</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 2</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 3</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 4</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 5</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card w-75 mx-auto" style="background-color: #ce8b5c; border: none;">
+                        <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                        <div class="card-body text-center" style="color: #ecccb4;">
+                            <h5 class="card-title fw-bold">Café Ué 6</h5>
+                            <p class="card-text fst-italic">R$15,00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselClassica" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselClassica" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 d-none d-md-flex">
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 1</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 1</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 2</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 3</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 4</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100" style="background-color: #ce8b5c; border: none;">
+                    <img src="img/copo.png" class="card-img-top p-2" alt="Copo de café">
+                    <div class="card-body text-center" style="color: #ecccb4;">
+                        <h5 class="card-title fw-bold">Café Ué 5</h5>
+                        <p class="card-text fst-italic">R$15,00</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
+    
 
-    <div class="experiencias">
-        <h1 class="title_home">Experiência Não Tão Clássica</h1>
-        <h6 class="subtitle">Café coado em outro lugar rsrs</h6>
 
-        <div class="cards">
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-        </div>
-    </div>   
-
-    <div class="experiencias">
-        <h1 class="title_home">Experiência Apocalíptica</h1>
-        <h6 class="subtitle">Tomou, morreu de infarto.</h6>
-
-        <div class="cards">
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-            <div class="container">
-                <img class="copo" src="copo.png" alt="">
-                <h3>Café Ué</h3>
-                <h5>R$15,00</h5>
-            </div>
-        </div>
-    </div>
-
-<footer>
+<footer class="mt-5 p-3 text-center" style="background-color: #a85d30; color:#ecccb4;">
     <h6>Desenvolvido por Karam Diniz, Desenvolvimento de Software Multiplataformas (1º Semestre), FATEC São José dos Campos - Prof. Jessen Vidal</h6>
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
